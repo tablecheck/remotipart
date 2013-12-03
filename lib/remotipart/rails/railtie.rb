@@ -33,6 +33,7 @@ module Remotipart
         ActiveSupport.on_load(:action_controller) do
           include RequestHelper
           include RenderOverrides
+          include RedirectToOverrides
         end
       end
 
